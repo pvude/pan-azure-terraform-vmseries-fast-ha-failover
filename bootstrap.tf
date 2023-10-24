@@ -3,7 +3,7 @@ resource "random_string" "storage_account_name" {
   lower   = true
   upper   = false
   special = false
-  number  = false
+  numeric  = false
 }
 
 resource "azurerm_storage_account" "bootstrap" {
